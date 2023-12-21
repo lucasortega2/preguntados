@@ -172,7 +172,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .juego-preguntas-menu {
-    height: 500px;
+    height: 800px;
   }
   .juego-preguntas-menu h2 {
     font-size: 80px;
