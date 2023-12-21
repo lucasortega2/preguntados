@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+}
+.juego-preguntas-menu {
+  margin: auto;
+  width: 100%;
+  min-width: 375px;
+  height: 400px;
+  min-height: 360px;
+  background-image: url("https://imagenes.muyinteresante.es/files/composte_image/uploads/2023/08/01/64c927ca910e0.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.juego-preguntas-menu h2 {
+  color: white;
+  text-align: center;
+  font-size: 200%;
+}
+.btn-juego-preguntas {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 25%;
+  width: 150px;
+  text-align: center;
+  border: 0;
+  align-content: center;
+}
+
+.preguntas-menu {
+  margin: auto;
+  width: 100%;
+  min-width: 375px;
+  height: 400px;
+  min-height: 360px;
+  background-image: url("https://imagenes.muyinteresante.es/files/composte_image/uploads/2023/08/01/64c927ca910e0.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+.preguntas-menu-1 {
+  margin-top: 30px;
+  width: 65%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.opcion {
+  width: 80%;
+  height: max-content;
+  max-width: 500px;
+  min-width: 250px;
+  padding: 0;
+  margin: 0px;
+  border-radius: 10%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opcion p {
+  color: blue;
+  font-weight: bolder;
+  margin: auto;
+  margin-left: 10px;
+  align-items: center;
+  width: 100%;
+}
+.fa-solid:first-child {
+  text-align: center;
+  height: 100%;
+  width: 25px;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid.fa-a {
+  background-color: blue;
+}
+.fa-solid.fa-a {
+}
+.fa-solid.fa-b {
+  background-color: blue;
+}
+.fa-solid.fa-c {
+  background-color: blue;
+}
+
+.marcador {
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+  color: blue;
+  font-size: 35px;
+  background-color: white;
+  width: 40px;
+  text-align: center;
+}
+.pregunta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: blue;
+  font-size: 17px;
+  min-width: 183px;
+  width: 65%;
+  height: 15%;
+  border-radius: 25%;
+  padding: 5px;
+  margin: 0;
+}
+.naranja {
+  position: relative;
+  top: 0;
+  width: 100%;
+  min-width: 300px;
+  height: 22%;
+  background-color: orange;
+}
+.btn-juego-continue {
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  padding: 5px 0;
+  border-radius: 25%;
+  width: 125px;
+  text-align: center;
+  border: 0;
+  align-content: center;
+}
+.hidden {
+  display: none;
+}
+.fa-check,
+.fa-xmark {
+  border: 2px solid;
+  align-items: center;
+  border-radius: 50%;
+  right: 20px;
+  top: 5px;
+  width: 10px;
+  padding: 3px;
+}
+
+.fa-check {
+  color: green !important;
+}
+.fa-xmark {
+  color: red !important;
+}
+.btn-preguntas-exit {
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .juego-preguntas-menu {
+    height: 500px;
+  }
+  .juego-preguntas-menu h2 {
+    font-size: 80px;
+  }
+  .btn-menu-start {
+    font-size: 40px;
+    width: 200px;
+    height: 70px;
+  }
+  .btn-menu-exit {
+    font-size: 40px;
+    width: 200px;
+    height: 70px;
+  }
+  .preguntas-menu {
+    height: 800px;
+  }
+  .naranja {
+    height: 20%;
+  }
+  .marcador {
+    top: 125px;
+    font-size: 60px;
+    width: 70px;
+  }
+  .preguntas-menu-1 {
+    justify-content: space-around;
+    height: 65%;
+  }
+  .pregunta {
+    font-size: 30px;
+  }
+  .opcion {
+    height: 40px;
+  }
+
+  .opcion p {
+    font-size: 25px;
+  }
+  .btn-juego-continue {
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .fa-check,
+  .fa-xmark {
+    width: 15px;
+    height: 15px;
+  }
+}
