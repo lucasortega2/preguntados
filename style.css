@@ -1,46 +1,62 @@
 body {
+  height: 1000px;
   margin: 0;
 }
 .juego-preguntas-menu {
   margin: auto;
   width: 100%;
   min-width: 375px;
-  height: 400px;
-  min-height: 360px;
+  height: 100vh;
   background-image: url("https://imagenes.muyinteresante.es/files/composte_image/uploads/2023/08/01/64c927ca910e0.jpeg");
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .juego-preguntas-menu h2 {
+  line-height: 80px;
   color: white;
   text-align: center;
-  font-size: 200%;
+  font-size: 80px;
+  width: 300px;
+  margin: 20px;
 }
+.btn-juego-continue,
+.btn-preguntas-backhome,
 .btn-juego-preguntas {
+  box-sizing: border-box;
   background-color: orange;
   color: white;
   font-size: 20px;
-  padding: 10px 15px;
-  border-radius: 25%;
+  border-radius: 30%;
   width: 150px;
+  padding: 5px 15px;
   text-align: center;
   border: 0;
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.margin-auto {
+  margin: auto;
+}
+.btn-menu-start,
+.btn-menu-exit {
+  font-size: 50px;
+  height: 60px;
 }
 
 .preguntas-menu {
   margin: auto;
   width: 100%;
   min-width: 375px;
-  height: 400px;
-  min-height: 360px;
+  height: 100vh;
   background-image: url("https://imagenes.muyinteresante.es/files/composte_image/uploads/2023/08/01/64c927ca910e0.jpeg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: flex;
@@ -50,41 +66,42 @@ body {
 }
 .preguntas-menu-1 {
   margin-top: 30px;
-  width: 65%;
-  height: 50%;
+  width: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .opcion {
   width: 80%;
-  height: max-content;
+  height: 50px;
   max-width: 500px;
   min-width: 250px;
   padding: 0;
   margin: 0px;
-  border-radius: 10%;
+  border-radius: 15%;
   border: none;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .opcion p {
+  font-size: 20px;
   color: blue;
   font-weight: bolder;
-  margin: auto;
-  margin-left: 10px;
-  align-items: center;
+  margin: 10px;
   width: 100%;
+  text-align: start;
 }
 .fa-solid:first-child {
+  box-sizing: border-box;
   text-align: center;
   height: 100%;
   width: 25px;
   margin: 0;
-  padding: 0;
-  font-size: 25px;
+  padding: 10px 25px;
+  font-size: 40px;
   color: white;
   display: flex;
   justify-content: center;
@@ -104,13 +121,17 @@ body {
 
 .marcador {
   border-radius: 50%;
-  position: absolute;
-  top: 65px;
   color: blue;
-  font-size: 35px;
+  font-size: 60px;
   background-color: white;
-  width: 40px;
+  width: 80px;
+  height: 80px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -35px;
 }
 .pregunta {
   display: flex;
@@ -119,12 +140,13 @@ body {
   text-align: center;
   background-color: white;
   color: blue;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 20px;
   min-width: 183px;
-  width: 65%;
+  width: 80%;
   height: max-content;
   border-radius: 25%;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
 }
 .naranja {
@@ -132,20 +154,13 @@ body {
   top: 0;
   width: 100%;
   min-width: 300px;
-  height: 22%;
+  height: 20%;
   background-color: orange;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
-.btn-juego-continue {
-  background-color: orange;
-  color: white;
-  font-size: 15px;
-  padding: 5px 0;
-  border-radius: 25%;
-  width: 125px;
-  text-align: center;
-  border: 0;
-  align-content: center;
-}
+
 .hidden {
   display: none;
 }
@@ -156,8 +171,14 @@ body {
   border-radius: 50%;
   right: 20px;
   top: 5px;
-  width: 10px;
+  width: 40px;
+  height: 30px;
   padding: 3px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
 }
 
 .fa-check {
@@ -166,14 +187,7 @@ body {
 .fa-xmark {
   color: red !important;
 }
-.btn-preguntas-exit {
-  margin: auto;
-}
-
 @media screen and (min-width: 1024px) {
-  .juego-preguntas-menu {
-    height: 800px;
-  }
   .juego-preguntas-menu h2 {
     font-size: 80px;
   }
@@ -187,22 +201,18 @@ body {
     width: 200px;
     height: 70px;
   }
-  .preguntas-menu {
-    height: 800px;
-  }
   .naranja {
     height: 20%;
   }
   .marcador {
-    top: 125px;
     font-size: 60px;
-    width: 70px;
+    width: 80px;
   }
   .preguntas-menu-1 {
-    justify-content: space-around;
     height: 65%;
   }
   .pregunta {
+    width: max-content;
     font-size: 30px;
   }
   .opcion {

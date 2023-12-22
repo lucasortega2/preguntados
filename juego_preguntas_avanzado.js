@@ -8,7 +8,8 @@ function juegoPreguntasAvanzado(
   btnContinue,
   marcador,
   menuPreguntasReset,
-  btnExitPreguntas
+  btnExitPreguntas,
+  btnBackHome
 ) {
   const $btnStart = document.querySelector(btnStart);
   const $btnExit = document.querySelector(btnExit);
@@ -21,9 +22,10 @@ function juegoPreguntasAvanzado(
   const $marcador = document.querySelector(marcador);
   const $menuPreguntasReset = document.querySelector(menuPreguntasReset);
   const $btnMenuExitPreguntas = document.querySelector(btnExitPreguntas);
+  const $btnBackHome = document.querySelector(btnBackHome);
   let puntajes = 0;
   let preguntasAvanzadas = [
-    "¿ Quién fue el autor del último libro de la Biblia?",
+    "¿Quién fue el autor del último libro de la Biblia?",
     "¿Cuantos libros tiene la Biblia?",
     "Cuál es la capital de Francia",
     "¿Cuál es el resultado de sumar los ángulos internos de un triángulo?",
@@ -52,6 +54,8 @@ function juegoPreguntasAvanzado(
         el.innerHTML += `<p>${todasLasRespuestas[controladorRespuestas][controlador]}</p>`;
         controlador++;
       });
+      $btnContinue.classList.add("hidden");
+      $btnBackHome.classList.remove("hidden");
       controlador = 0;
       controladorRespuestas++;
       controladorPreguntas++;
@@ -59,6 +63,8 @@ function juegoPreguntasAvanzado(
       $btnMenuExitPreguntas.classList.remove("hidden");
       $preguntas.innerHTML = "";
       $menuPreguntasReset.classList.add("hidden");
+      $btnMenuExitPreguntas.classList.add("margin-auto");
+      $btnContinue.classList.add("hidden");
     }
   };
 
@@ -86,6 +92,14 @@ function juegoPreguntasAvanzado(
       mostrarPregunta();
     }
 
+    if (e.target == $btnBackHome) {
+      $opciones.forEach((el, i) => {
+        el.innerHTML = `<i class="fa-solid fa-${opciones[i]}"></i>`;
+      });
+      reiniciarJuego();
+      $menuPrincipal.classList.remove("hidden");
+      $menuPreguntas.classList.add("hidden");
+    }
     if (e.target.matches(btnExitPreguntas)) {
       reiniciarJuego();
       $menuPrincipal.classList.remove("hidden");
@@ -95,9 +109,6 @@ function juegoPreguntasAvanzado(
 
   $opciones.forEach((Element, index) => {
     let $i;
-    if (Element.textContent == respuestasAvanzadas[contadorPregunta]) {
-      console.log("hola");
-    }
     $i = document.createElement("i");
     let $check = document.createElement("i");
     const respuestaCorrecta = (e) => {
@@ -125,6 +136,8 @@ function juegoPreguntasAvanzado(
     Element.addEventListener("click", (e) => {
       if (!clickeado) {
         clickeado = true;
+        $btnBackHome.classList.add("hidden");
+        $btnContinue.classList.remove("hidden");
         if (
           e.target.closest(".opcion").textContent ==
           respuestasAvanzadas[contadorPregunta]
@@ -151,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".btn-juego-continue",
     ".marcador",
     ".preguntas-menu-1",
-    ".btn-preguntas-exit"
+    ".btn-preguntas-exit",
+    ".btn-preguntas-backhome"
   );
 });
