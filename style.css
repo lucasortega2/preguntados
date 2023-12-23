@@ -42,7 +42,7 @@ h2 {
 }
 .juego-preguntas-menu {
   box-sizing: border-box;
-  background-image: url("Fondos.svg");
+  background-image: url("fondo.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
@@ -51,9 +51,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
+  background-repeat: initial;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: f;
+  min-height: 100vh;
 }
 .pregunta-div {
   position: relative;
@@ -90,7 +92,7 @@ h2 {
 }
 .preguntas-menu {
   box-sizing: border-box;
-  background-image: url("Fondos.svg");
+  background-image: url("fondo.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
