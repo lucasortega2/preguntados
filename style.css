@@ -7,6 +7,8 @@ h2 {
   margin: 0;
 }
 .question-game {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -38,7 +40,7 @@ h2 {
 }
 .juego-preguntas-menu {
   box-sizing: border-box;
-  background-image: url("fondo.svg");
+  background-image: url("Fondos.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
@@ -55,6 +57,8 @@ h2 {
   position: relative;
   display: flex;
   justify-content: center;
+  width: max-content;
+  max-width: 300px;
 }
 .pregunta-div svg {
   position: absolute;
@@ -83,7 +87,7 @@ h2 {
 }
 .preguntas-menu {
   box-sizing: border-box;
-  background-image: url("fondo.svg");
+  background-image: url("Fondos.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
@@ -103,7 +107,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .opcion {
   width: 100%;
@@ -187,7 +191,7 @@ h2 {
   font-weight: 700;
   font-size: 20px;
   min-width: 183px;
-  width: 80%;
+  width: 100%;
   height: max-content;
   border-radius: 22%;
   padding: 10px;
