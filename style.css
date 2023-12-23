@@ -250,15 +250,22 @@ h2 {
   .preguntas-menu-1 {
     height: 65%;
   }
+  .pregunta-div {
+    width: 500px;
+    max-width: none;
+  }
   .pregunta {
     width: max-content;
     font-size: 30px;
   }
+
   .opcion {
-    height: 40px;
+    height: 100px;
+    width: 500px;
+    margin: 30px;
   }
 
   .opcion p {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
