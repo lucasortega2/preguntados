@@ -7,6 +7,8 @@ h2 {
   margin: 0;
 }
 .question-game {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
   display: flex;
@@ -40,7 +42,7 @@ h2 {
 }
 .juego-preguntas-menu {
   box-sizing: border-box;
-  background-image: url("Fondo.svg");
+  background-image: url("Fondos.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
@@ -57,6 +59,8 @@ h2 {
   position: relative;
   display: flex;
   justify-content: center;
+  width: max-content;
+  max-width: 300px;
 }
 .pregunta-div svg {
   position: absolute;
@@ -86,7 +90,7 @@ h2 {
 }
 .preguntas-menu {
   box-sizing: border-box;
-  background-image: url("Fondo.svg");
+  background-image: url("Fondos.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
@@ -190,7 +194,7 @@ h2 {
   font-weight: 700;
   font-size: 20px;
   min-width: 183px;
-  width: 80%;
+  width: 100%;
   height: max-content;
   border-radius: 22%;
   padding: 10px;
@@ -249,15 +253,22 @@ h2 {
   .preguntas-menu-1 {
     height: 65%;
   }
+  .pregunta-div {
+    width: 500px;
+    max-width: none;
+  }
   .pregunta {
     width: max-content;
     font-size: 30px;
   }
+
   .opcion {
-    height: 40px;
+    height: 100px;
+    width: 500px;
+    margin: 30px;
   }
 
   .opcion p {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
