@@ -38,7 +38,7 @@ h2 {
 }
 .juego-preguntas-menu {
   box-sizing: border-box;
-  background-image: url("Fondo.svg");
+  background-image: url("fondo.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
@@ -83,7 +83,7 @@ h2 {
 }
 .preguntas-menu {
   box-sizing: border-box;
-  background-image: url("Fondo.svg");
+  background-image: url("fondo.svg");
   margin: auto;
   width: 100%;
   min-width: 375px;
