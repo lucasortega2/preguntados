@@ -9,6 +9,8 @@ h2 {
 .question-game {
   text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .question {
   color: #fff;
@@ -59,14 +61,15 @@ h2 {
 .pregunta-div svg {
   position: absolute;
   bottom: -30px;
-  left: 50px;
+  left: 80px;
 }
 .opciones {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: max-content;
   width: max-content;
+  align-items: center;
 }
 .juego-preguntas-menu h2 {
   color: #fff;
@@ -103,7 +106,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .opcion {
   width: 100%;
@@ -117,7 +120,7 @@ h2 {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 15px;
+  margin: 30px;
 }
 .opcion p {
   font-size: 20px;
