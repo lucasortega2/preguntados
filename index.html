@@ -11,9 +11,15 @@
 
 <body>
     <div class="juego-preguntas-menu ">
-        <h2>Question Game</h2>
-        <button class="btn-juego-preguntas btn-menu-start">Start</button> <br>
-        <button class="btn-juego-preguntas btn-menu-exit">Exit</button>
+        <div class="question-game">
+            <img class="question" src="/Question.svg" alt="">
+            <img class="game" src="/Game.svg" alt="">
+        </div>
+        <div class="botones-inicio">
+            <img class="btn-juego-preguntas btn-menu-start" src="Start.svg" alt="">
+            <img class="btn-juego-preguntas btn-menu-exit" src="ExitButton.svg" alt="">
+        </div>
+
     </div>
     <div class="preguntas-menu hidden">
         <div class="naranja">
@@ -21,14 +27,22 @@
         </div>
 
         <div class="preguntas-menu-1">
-            <p class="pregunta"></p>
-            <button class="opcion"><i class="fa-solid fa-a"></i></button>
-            <button class="opcion"><i class="fa-solid fa-b"></i></button>
-            <button class="opcion"><i class="fa-solid fa-c"></i></button>
+            <div class="pregunta-div">
+                <p class="pregunta"></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36" viewBox="0 0 48 36" fill="none">
+                    <path d="M22.1013 35.9207L0 1.69136L47.1303 -5.00282e-06L22.1013 35.9207Z" fill="white" />
+                </svg>
+            </div>
+            <div class="opciones">
+
+                <button class="opcion"><i class="fa-solid fa-a"></i></button>
+                <button class="opcion"><i class="fa-solid fa-b"></i></button>
+                <button class="opcion"><i class="fa-solid fa-c"></i></button>
+            </div>
         </div>
-        <button class="btn-juego-continue">Continue</button>
-        <button class="btn-juego-preguntas btn-preguntas-exit">Exit</button>
-        <button class="btn-juego-preguntas btn-preguntas-backhome">Back Home</button>
+        <img class="btn-juego-continue src=" src="Continue.svg" alt="">
+        <img class="btn-juego-preguntas btn-preguntas-exit" src="ExitButton.svg" alt="">
+        <img class="btn-juego-preguntas btn-preguntas-backhome" src="/Volver.svg" alt="">
     </div>
     <script src="juego_preguntas_avanzado.js"></script>
 </body>
