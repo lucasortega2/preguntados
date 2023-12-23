@@ -41,6 +41,7 @@ h2 {
   justify-content: center;
 }
 .juego-preguntas-menu {
+  overflow: hidden;
   box-sizing: border-box;
   background-image: url("fondo.svg");
   margin: auto;
@@ -89,6 +90,7 @@ h2 {
   margin: auto;
 }
 .preguntas-menu {
+  overflow: hidden;
   box-sizing: border-box;
   background-image: url("fondo.svg");
   margin: auto;
