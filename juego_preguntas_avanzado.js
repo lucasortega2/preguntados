@@ -28,7 +28,7 @@ function juegoPreguntasAvanzado(
     "¿Quién fue el autor del último libro de la Biblia?",
     "¿Cuantos libros tiene la Biblia?",
     "Cuál es la capital de Francia",
-    "¿Cuál es el resultado de sumar los ángulos internos de un triángulo?",
+    "¿Cuál es el resultado de sumar los ángul loos internos de un triángulo?",
     "¿Cuántos planetas hay en nuestro sistema solar?",
   ];
   let todasLasRespuestas = [
