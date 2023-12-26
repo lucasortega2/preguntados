@@ -241,6 +241,7 @@ h2 {
   .pregunta-div svg {
     left: 70px;
   }
+
   .pregunta-div {
     width: 500px;
     max-width: none;
@@ -256,5 +257,11 @@ h2 {
   }
   .opcion p {
     font-size: 40px;
+  }
+  .preguntas-menu {
+    height: 100%;
+  }
+  .juego-preguntas-menu {
+    height: 100%;
   }
 }
