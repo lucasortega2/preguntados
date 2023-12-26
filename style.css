@@ -42,8 +42,6 @@ h2 {
   justify-content: center;
 }
 .juego-preguntas-menu {
-  overflow: hidden;
-  box-sizing: border-box;
   background-image: url("fondo.svg");
   width: 100%;
   min-width: 375px;
@@ -89,18 +87,15 @@ h2 {
   margin: auto;
 }
 .preguntas-menu {
-  overflow: hidden;
-  box-sizing: border-box;
   background-image: url("fondo.svg");
-  margin: auto;
   width: 100%;
   min-width: 375px;
   height: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  background-repeat: initial;
+  justify-content: center;
+  background-repeat: repeat;
   background-position: 50% 50%;
   background-size: contain;
 }
